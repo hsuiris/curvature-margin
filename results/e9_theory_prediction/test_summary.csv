@@ -1,0 +1,2 @@
+n_models,n_determined,MAE_theory,MAE_guess_T1,MAE_dev_mean,criterion1_accuracy,criterion2_advantage_over_baselines,MAE_corrected,corrected_criterion1,corrected_criterion2
+4,4,0.0020696012836270428,0.007372102274341097,0.007977314327703933,True,True,0.0019159018181056364,True,True

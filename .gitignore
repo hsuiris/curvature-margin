@@ -1,0 +1,11 @@
+._*
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+data/*
+!data/README.md
+!data/manifests/
+paper/figs/
+*.log
+scripts/.origin_map.json

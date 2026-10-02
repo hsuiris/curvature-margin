@@ -1,0 +1,16 @@
+{
+  "raw_file": "SubtaskB.jsonl",
+  "raw_sha256": "4d65fc1fb93b5c9d21b226aca06b610ee031fa9ccbc18fa6f39d16273dd281c7",
+  "seed": 20260926,
+  "rule": "human rows not in m4gt_subtaskb_manifest.csv; 120-300 whitespace words; per-source counts as N_PER; candidates sorted by text sha256 then rng.choice without replacement; first 50 per source are continuation sources; ids 0-299 = source, 300-999 = reference",
+  "eligible_per_source": {
+    "arxiv": 2791,
+    "outfox": 842,
+    "peerread": 1033,
+    "reddit": 937,
+    "wikihow": 572,
+    "wikipedia": 704
+  },
+  "rows": 1000,
+  "manifest_sha256": "7c6f2b6529a8ef7b1a1920bc798d45c68a7a7162823566f52a73deb6ae8d1caf"
+}

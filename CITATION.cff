@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper."
+title: "Estimating Self-Scoring AI-Text Detectors' Failure Temperatures from Human Text"
+authors:
+  - family-names: "Hsu"
+    given-names: "Yun-Chin"
+    affiliation: "National Taiwan University"
+    email: "b09207055@ntu.edu.tw"
+    orcid: "https://orcid.org/0009-0008-4232-1319"
+  - family-names: "Yang"
+    given-names: "Te-Lun"
+    affiliation: "National Taiwan University"
+    email: "d12944007@ntu.edu.tw"
+    orcid: "https://orcid.org/0000-0002-3351-1785"
+license: MIT
+repository-code: "https://github.com/hsuiris/curvature-margin"

@@ -1,0 +1,358 @@
+{
+ "F": 11,
+ "families": [
+  "Danube",
+  "EuroLLM",
+  "Gemma",
+  "Llama",
+  "Mamba",
+  "Pleias",
+  "RedPajama",
+  "Salamandra",
+  "StableLM",
+  "TinyLlama",
+  "XGLM"
+ ],
+ "n_models": 12,
+ "fixed_families": [
+  "Danube"
+ ],
+ "criterion1": {
+  "passed": false,
+  "all_state1": true,
+  "max_error": 0.03279073904677099,
+  "family_mae": 0.008036219644123033,
+  "failures": [],
+  "over_0_02": [
+   "facebook/xglm-1.7B"
+  ]
+ },
+ "criterion2": {
+  "passed": true,
+  "computed": true,
+  "r": 0.9463464605904109,
+  "p": 9.99990000099999e-06,
+  "n_perm": 100000,
+  "seed": 20260930,
+  "p_ok_but_r_not_positive": false
+ },
+ "success": false,
+ "chain_A": [
+  {
+   "comparison": "slope",
+   "dbar": -0.0027442987733906836,
+   "K": 1,
+   "F": 11,
+   "lower": -0.004852166990069363,
+   "complete": true,
+   "missing_rounds": 0,
+   "status": "未通過",
+   "passed": false
+  },
+  {
+   "comparison": "direct",
+   "dbar": -0.006197821783631213,
+   "K": 2,
+   "F": 11,
+   "lower": -0.012877843033940916,
+   "complete": true,
+   "missing_rounds": 0,
+   "status": "未檢定",
+   "passed": false
+  },
+  {
+   "comparison": "line",
+   "dbar": -0.0026264386450586363,
+   "K": 1,
+   "F": 11,
+   "lower": -0.004891794141599465,
+   "complete": true,
+   "missing_rounds": 0,
+   "status": "未檢定",
+   "passed": false
+  }
+ ],
+ "chain_B": [
+  {
+   "comparison": "slope",
+   "dbar": -0.0027442987733906836,
+   "K": 1,
+   "F": 11,
+   "lower": -0.004852166990069363,
+   "complete": true,
+   "missing_rounds": 0,
+   "upper": 0.0014441485943462204,
+   "status": "未通過",
+   "passed": false
+  },
+  {
+   "comparison": "direct",
+   "dbar": -0.006197821783631213,
+   "K": 2,
+   "F": 11,
+   "lower": -0.012877843033940916,
+   "complete": true,
+   "missing_rounds": 0,
+   "upper": 0.0008887108062240105,
+   "status": "未檢定",
+   "passed": false
+  }
+ ],
+ "described": {
+  "guess1": {
+   "K": 8,
+   "F": 11,
+   "d_f": {
+    "Danube": 0.00267614142418815,
+    "EuroLLM": 0.0024746810812594777,
+    "Gemma": 0.056392017746698775,
+    "Llama": -0.001671177941812818,
+    "Mamba": 0.005136471344656224,
+    "Pleias": 0.0014493919057327886,
+    "RedPajama": 0.0022985370587025322,
+    "Salamandra": 0.0010827241161339707,
+    "StableLM": -0.006412508060885225,
+    "TinyLlama": 0.0034508841250697753,
+    "XGLM": -0.019968720332854906
+   },
+   "dbar": 0.00426440386062625,
+   "dbar_interval": [
+    -0.004404189937224695,
+    0.016861590627541258
+   ],
+   "missing_rounds": 0,
+   "K_boot": {
+    "median": 7.0,
+    "p2_5": 3.0,
+    "p97_5": 9.0
+   },
+   "largest_family_share": 1.2021720351619902
+  },
+  "known_mean": {
+   "K": 6,
+   "F": 11,
+   "d_f": {
+    "Danube": 0.0021040562989677047,
+    "EuroLLM": 0.002695729336402941,
+    "Gemma": 0.04749201774669887,
+    "Llama": 0.00722882205818709,
+    "Mamba": -0.0020607965861803024,
+    "Pleias": -0.007450608094267119,
+    "RedPajama": -0.00039480141263070756,
+    "Salamandra": 0.0012232019798019689,
+    "StableLM": 0.0024874919391146832,
+    "TinyLlama": -0.0026209732858122337,
+    "XGLM": -0.028868720332854814
+   },
+   "dbar": 0.0019850381497661888,
+   "dbar_interval": [
+    -0.006968538727451232,
+    0.013310702829234562
+   ],
+   "missing_rounds": 0,
+   "K_boot": {
+    "median": 6.0,
+    "p2_5": 5.0,
+    "p97_5": 8.0
+   }
+  }
+ },
+ "direct_cases": {
+  "0": 0,
+  "1": 12,
+  "2": 0,
+  "3": 0,
+  "4": 0
+ },
+ "direct_mae": {
+  "n_models": 12,
+  "n_excluded": 0,
+  "formula": 0.008109662054257468,
+  "direct": 0.0024132581953337042
+ },
+ "direct_excluded_families": [],
+ "c2_bootstrap_pass_share": 1.0,
+ "bootstrap": {
+  "n": 2000,
+  "seed_documents": 20260932,
+  "seed_families": 20260931,
+  "seed_permutations": 20260933,
+  "n_perm": 10000
+ },
+ "leave_one_family_out": [
+  {
+   "dropped": "Danube",
+   "r": 0.9466083528403301,
+   "p": 9.99990000099999e-06,
+   "passed": true,
+   "dbar_slope": -0.002842149514866543,
+   "K_slope": 1,
+   "dbar_direct": -0.006799523293280152,
+   "K_direct": 2,
+   "dbar_line": -0.0026919670252701254,
+   "K_line": 1
+  },
+  {
+   "dropped": "EuroLLM",
+   "r": 0.9465636684158252,
+   "p": 9.99990000099999e-06,
+   "passed": true,
+   "dbar_slope": -0.0028457979080072416,
+   "K_slope": 1,
+   "dbar_direct": -0.006816316128290168,
+   "K_direct": 2,
+   "dbar_line": -0.0027168856160824538,
+   "K_line": 1
+  },
+  {
+   "dropped": "Gemma",
+   "r": 0.8111564776142856,
+   "p": 9.99990000099999e-06,
+   "passed": true,
+   "dbar_slope": -0.003267452004115501,
+   "K_slope": 0,
+   "dbar_direct": -0.005598934911887721,
+   "K_direct": 2,
+   "dbar_line": -0.003253836251436759,
+   "K_line": 0
+  },
+  {
+   "dropped": "Llama",
+   "r": 0.9436961077874038,
+   "p": 9.99990000099999e-06,
+   "passed": true,
+   "dbar_slope": -0.002972582500723198,
+   "K_slope": 1,
+   "dbar_direct": -0.006586377737931137,
+   "K_direct": 2,
+   "dbar_line": -0.0028794347682034706,
+   "K_line": 1
+  },
+  {
+   "dropped": "Mamba",
+   "r": 0.9472503026706277,
+   "p": 9.99990000099999e-06,
+   "passed": true,
+   "dbar_slope": -0.0027640244717319074,
+   "K_slope": 1,
+   "dbar_direct": -0.006903434595414338,
+   "K_direct": 1,
+   "dbar_line": -0.0026166186856083186,
+   "K_line": 1
+  },
+  {
+   "dropped": "Pleias",
+   "r": 0.9469405175966533,
+   "p": 1.999980000199998e-05,
+   "passed": true,
+   "dbar_slope": -0.002460406996082909,
+   "K_slope": 1,
+   "dbar_direct": -0.005715569820364941,
+   "K_direct": 2,
+   "dbar_line": -0.002318911449860783,
+   "K_line": 1
+  },
+  {
+   "dropped": "RedPajama",
+   "r": 0.9462893344745691,
+   "p": 1.999980000199998e-05,
+   "passed": true,
+   "dbar_slope": -0.0027445423599269047,
+   "K_slope": 1,
+   "dbar_direct": -0.006880211010937299,
+   "K_direct": 1,
+   "dbar_line": -0.0026359283747097394,
+   "K_line": 1
+  },
+  {
+   "dropped": "Salamandra",
+   "r": 0.9459160961199444,
+   "p": 1.999980000199998e-05,
+   "passed": true,
+   "dbar_slope": -0.0027786993880277834,
+   "K_slope": 1,
+   "dbar_direct": -0.006688879869610887,
+   "K_direct": 2,
+   "dbar_line": -0.002673780109266821,
+   "K_line": 1
+  },
+  {
+   "dropped": "StableLM",
+   "r": 0.9447953036043619,
+   "p": 1.999980000199998e-05,
+   "passed": true,
+   "dbar_slope": -0.002797831611404733,
+   "K_slope": 1,
+   "dbar_direct": -0.006178155390676921,
+   "K_direct": 2,
+   "dbar_line": -0.002696018097252528,
+   "K_line": 1
+  },
+  {
+   "dropped": "TinyLlama",
+   "r": 0.9465484920458316,
+   "p": 9.99990000099999e-06,
+   "passed": true,
+   "dbar_slope": -0.002662425533284518,
+   "K_slope": 1,
+   "dbar_direct": -0.006440624768047876,
+   "K_direct": 2,
+   "dbar_line": -0.0025497446871794115,
+   "K_line": 1
+  },
+  {
+   "dropped": "XGLM",
+   "r": 0.995402172354304,
+   "p": 9.99990000099999e-06,
+   "passed": true,
+   "dbar_slope": -0.0020513742191262787,
+   "K_slope": 1,
+   "dbar_direct": -0.0035680120935019043,
+   "K_direct": 2,
+   "dbar_line": -0.0018577000307745894,
+   "K_line": 1
+  }
+ ],
+ "tokenizer_groups": {
+  "n_groups": 9,
+  "r": 0.9460554167470112,
+  "p": 0.00014999850001499985,
+  "passed": true
+ },
+ "variant_A": {
+  "families_formula_closer": 3,
+  "max_abs_difference": 0.001808377870051281
+ },
+ "corrected_prediction": {
+  "n": 5,
+  "mae": 0.004481471914594826,
+  "label": "探索"
+ },
+ "groups": {
+  "lang_group=multilingual": {
+   "families": 6,
+   "mean_error": 0.011517194444946513,
+   "mean_d_guess1": 0.006626486095859548,
+   "mean_d_slope": -0.002893431480492666
+  },
+  "lang_group=other": {
+   "families": 5,
+   "mean_error": 0.0038590498831348576,
+   "mean_d_guess1": 0.0014299051783462913,
+   "mean_d_slope": -0.002565339524868304
+  },
+  "strip_group=keep": {
+   "families": 6,
+   "mean_error": 0.0073918165960980735,
+   "mean_d_guess1": 0.009532122008848712,
+   "mean_d_slope": -0.0018425532673222629
+  },
+  "strip_group=strip": {
+   "families": 5,
+   "mean_error": 0.008809503301752985,
+   "mean_d_guess1": -0.0020568579172407066,
+   "mean_d_slope": -0.003826393380672788
+  }
+ },
+ "prediction_claim_allowed": false
+}

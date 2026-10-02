@@ -1,0 +1,2 @@
+pooled_c_text,pooled_c_text_CI,pooled_c_ids,pooled_c_ids_CI,pooled_D,pooled_D_CI,share_of_offset,H1,H2,H3,verdict
+-0.0113436375,"(np.float64(-0.020364833044004625), np.float64(-0.0027748583299398917))",-0.005982128,"(np.float64(-0.01505896410526475), np.float64(0.002398604471818538))",-0.00536151,"(np.float64(-0.006395723612513393), np.float64(-0.004414983322931221))",0.4726447,True,True,False,inconclusive

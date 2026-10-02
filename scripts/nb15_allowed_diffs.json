@@ -1,0 +1,292 @@
+{
+ "about": "Differences allowed between notebooks/15_replication_test.ipynb (en) and the Drive copy (zh), written by build_nb15.py. Everything else in the code cells must be identical once comments are removed.",
+ "messages": [
+  {
+   "en": "\"DRYRUN must be False on Colab.\"",
+   "zh": "\"在 Colab 上 DRYRUN 必須是 False。\""
+  },
+  {
+   "en": "\"No GPU: switch the Colab server to an A100.\"",
+   "zh": "\"沒有 GPU：請把 Colab 伺服器換成 A100。\""
+  },
+  {
+   "en": "f\"{name} is not an A100; choose an A100 server.\"",
+   "zh": "f\"{name} 不是 A100，請改選 A100 伺服器。\""
+  },
+  {
+   "en": "f\"Only {free_gb:.0f} GB free; restart the session and run again.\"",
+   "zh": "f\"可用記憶體只有 {free_gb:.0f} GB，請重新啟動執行階段再跑。\""
+  },
+  {
+   "en": "f\"Killed: {victims} | {GPU_NAME}, {free_gb:.0f} GB free | DRYRUN = {DRYRUN}\"",
+   "zh": "f\"砍掉：{victims}｜{GPU_NAME} 可用 {free_gb:.0f} GB｜DRYRUN = {DRYRUN}\""
+  },
+  {
+   "en": "f\"Data folder not found: {DATA_DIR}\"",
+   "zh": "f\"找不到資料夾：{DATA_DIR}\""
+  },
+  {
+   "en": "f\"Data folder: {os.getcwd()} | output: {OUT} | HF token set: {HF_TOKEN is not None}\"",
+   "zh": "f\"資料夾：{os.getcwd()}｜輸出：{OUT}｜HF token 已設定：{HF_TOKEN is not None}\""
+  },
+  {
+   "en": "f\"Installed versions differ from the registered ones: {bad}\"",
+   "zh": "f\"安裝的版本和登錄的不同：{bad}\""
+  },
+  {
+   "en": "f\"A package changed after it was imported {stale_modules(INSTALLED)}: restart the session (Runtime > Restart session), then Run All.\"",
+   "zh": "f\"套件在載入後換了版本 {stale_modules(INSTALLED)}：請重新啟動執行階段（Runtime > Restart session）再 Run All。\""
+  },
+  {
+   "en": "f\"{pkg} is installed; the registered run uses the PyTorch path only.\"",
+   "zh": "f\"{pkg} 已安裝；登錄的做法只用 PyTorch 路徑。\""
+  },
+  {
+   "en": "f\"{s}/{role}: {len(rows)} rows, expected {n}\"",
+   "zh": "f\"{s}／{role}：{len(rows)} 列，應為 {n}\""
+  },
+  {
+   "en": "f\"Text hash mismatch on line {ln}\"",
+   "zh": "f\"第 {ln} 行文字雜湊不符\""
+  },
+  {
+   "en": "f\"Line {ln} is not a human text from {src}\"",
+   "zh": "f\"第 {ln} 行不是 {src} 的人類文章\""
+  },
+  {
+   "en": "\"Some manifest lines are missing from the raw file\"",
+   "zh": "\"原始檔少了 manifest 裡的某些行\""
+  },
+  {
+   "en": "\"Raw file SHA-256 does not match; stopping.\"",
+   "zh": "\"原始檔 SHA-256 不符，停止。\""
+  },
+  {
+   "en": "\"P/E manifest SHA-256 does not match; stopping.\"",
+   "zh": "\"P／E manifest 的 SHA-256 不符，停止。\""
+  },
+  {
+   "en": "\"A-group manifest SHA-256 does not match; stopping.\"",
+   "zh": "\"A 組 manifest 的 SHA-256 不符，停止。\""
+  },
+  {
+   "en": "\"Unexpected manifest columns\"",
+   "zh": "\"manifest 欄位和計畫不符\""
+  },
+  {
+   "en": "\"P rows must have role P and only P rows\"",
+   "zh": "\"只有 P 組的列角色是 P\""
+  },
+  {
+   "en": "\"The manifest has rows outside the registered quota\"",
+   "zh": "\"manifest 有配額以外的列\""
+  },
+  {
+   "en": "f\"Normalized hash mismatch, id {r.id}\"",
+   "zh": "f\"正規化雜湊不符，編號 {r.id}\""
+  },
+  {
+   "en": "f\"group sizes {len(P_IDS), len(E_IDS), len(A_IDS), len(B_IDS)} differ from the quota {n_quota}\"",
+   "zh": "f\"各組篇數 {len(P_IDS), len(E_IDS), len(A_IDS), len(B_IDS)} 和配額 {n_quota} 不符\""
+  },
+  {
+   "en": "f\"P {len(P_IDS)}, E {len(E_IDS)} (prompts: A half {len(A_IDS)}, B half {len(B_IDS)}); A-group prompts for the GPU check: {len(A_PROMPTS)}\"",
+   "zh": "f\"P {len(P_IDS)} 篇、E {len(E_IDS)} 篇（提示：A 半 {len(A_IDS)}、B 半 {len(B_IDS)}）；GPU 檢查用的 A 組提示 {len(A_PROMPTS)} 篇\""
+  },
+  {
+   "en": "f\"moved to _invalid/: {os.path.basename(path)} ({reason})\"",
+   "zh": "f\"移到 _invalid/：{os.path.basename(path)}（{reason}）\""
+  },
+  {
+   "en": "f\"extra tokens are not all at the start for {s!r}\"",
+   "zh": "f\"{s!r} 多出的記號不全在開頭\""
+  },
+  {
+   "en": "\"the extra tokens differ between the five strings\"",
+   "zh": "\"五個字串多出的記號不一致\""
+  },
+  {
+   "en": "f\"config or generation_config ids outside 0..{V - 1}: {sorted(i for i in model_side if not 0 <= i < V)}\"",
+   "zh": "f\"config 或 generation_config 的編號超出 0 到 {V - 1}：{sorted(i for i in model_side if not 0 <= i < V)}\""
+  },
+  {
+   "en": "f\"generation settings differ from the plan: {off}\"",
+   "zh": "f\"生成設定和計畫不同：{off}\""
+  },
+  {
+   "en": "\"a banned id was generated\"",
+   "zh": "\"生成了禁止清單裡的編號\""
+  },
+  {
+   "en": "\"PAD must appear only where the mask is 0\"",
+   "zh": "\"PAD 只能出現在遮罩為 0 的位置\""
+  },
+  {
+   "en": "\"every text must be scored\"",
+   "zh": "\"每一篇都要評分\""
+  },
+  {
+   "en": "f\"unreadable ({type(err).__name__})\"",
+   "zh": "f\"讀不出來（{type(err).__name__}）\""
+  },
+  {
+   "en": "\"config hash differs\"",
+   "zh": "\"設定雜湊不符\""
+  },
+  {
+   "en": "\"ids differ from the expected set or repeat\"",
+   "zh": "\"編號集合不符或有重複\""
+  },
+  {
+   "en": "f\"text {r['id']}: input or length differs from the target\"",
+   "zh": "f\"第 {r['id']} 篇：輸入或長度和目標不符\""
+  },
+  {
+   "en": "f\"text {r['id']}: non-finite scores\"",
+   "zh": "f\"第 {r['id']} 篇：分數有非有限值\""
+  },
+  {
+   "en": "f\"text {r['id']}: prompt or length differs from the target\"",
+   "zh": "f\"第 {r['id']} 篇：提示或長度和目標不符\""
+  },
+  {
+   "en": "f\"text {r['id']}: contains a banned id\"",
+   "zh": "f\"第 {r['id']} 篇：含禁止清單裡的編號\""
+  },
+  {
+   "en": "f\"{e['name']}: start tokens differ from R1\"",
+   "zh": "f\"{e['name']}：開頭記號和 R1 登錄不同\""
+  },
+  {
+   "en": "f\"{e['name']}: banned list differs from R1\"",
+   "zh": "f\"{e['name']}：禁止清單和 R1 登錄不同\""
+  },
+  {
+   "en": "f\"{e['name']}: PAD differs from R1\"",
+   "zh": "f\"{e['name']}：PAD 和 R1 登錄不同\""
+  },
+  {
+   "en": "\"declared by the host: \"",
+   "zh": "\"主持人宣告：\""
+  },
+  {
+   "en": "\"missing\"",
+   "zh": "\"不存在\""
+  },
+  {
+   "en": "f\"{os.path.basename(path)} fails its check ({why}) but predictions.json already exists: stop for review.\"",
+   "zh": "f\"{os.path.basename(path)} 沒有通過檢查（{why}），但 predictions.json 已經存在：停下來檢查。\""
+  },
+  {
+   "en": "\"interrupted\"",
+   "zh": "\"中斷\""
+  },
+  {
+   "en": "\"prediction not written (state 3)\"",
+   "zh": "\"預測未寫出（狀態③）\""
+  },
+  {
+   "en": "\"rerun limit or 14-day limit reached (state 3)\"",
+   "zh": "\"超過重跑上限或 14 天期限（狀態③）\""
+  },
+  {
+   "en": "\"the environment changed while this model was half done: redone from scratch\"",
+   "zh": "\"這個模型做到一半時執行環境改變：從頭重做\""
+  },
+  {
+   "en": "f\"Colab's preinstalled versions changed: first run {first}, now {env}. Stop for review (plan 5.4: revision note, then check_registration.py env-update); do not redo any file.\"",
+   "zh": "f\"Colab 預裝的版本變了：第一次執行是 {first}，現在是 {env}。請停下來檢查（計畫 5.4：先寫修訂紀錄，再用 check_registration.py env-update 更新）；不要重做任何檔案。\""
+  },
+  {
+   "en": "f\"{len(MODELS)} models + candidate {CANDIDATE['name'] if CANDIDATE else None}; temperatures {TEMPS}; {DTYPE}\"",
+   "zh": "f\"{len(MODELS)} 個模型加候補 {CANDIDATE['name'] if CANDIDATE else None}；溫度 {TEMPS}；{DTYPE}\""
+  },
+  {
+   "en": "\"R1 is registered (r1_models.json exists): stage 0 is skipped.\"",
+   "zh": "\"R1 已登錄（r1_models.json 存在）：略過第零階段。\""
+  },
+  {
+   "en": "\"stage0_record.json is already written (it is written only once): the checks are not run again.\"",
+   "zh": "\"stage0_record.json 已經寫出（只寫一次）：不再重做檢查。\""
+  },
+  {
+   "en": "f\"Could not load {retry} (temporary causes are not failures): run stage 0 again later; nothing was recorded.\"",
+   "zh": "f\"{retry} 無法載入（暫時性原因不算技術失敗）：請稍後重跑第零階段；這次沒有寫出任何紀錄。\""
+  },
+  {
+   "en": "f\"Final list: {REC0['final']}\\nChanges: {REC0['changes']}\\nTotal P_m {REC0['P_m_total_min']:.0f} min; stage0_record.json SHA-256 {SHA0}\"",
+   "zh": "f\"最終名單：{REC0['final']}\\n變動：{REC0['changes']}\\nP_m 總和 {REC0['P_m_total_min']:.0f} 分鐘；stage0_record.json 的 SHA-256 {SHA0}\""
+  },
+  {
+   "en": "\"Fewer than 8 families are left: stop and ask the boss.\"",
+   "zh": "\"家族少於 8 個：停止，請老闆決定。\""
+  },
+  {
+   "en": "\"Stage 0 is done. Next: register R1 and write r1_models.json; then Run All again.\"",
+   "zh": "\"第零階段完成。下一步：完成 R1 登錄並寫出 r1_models.json，之後再按 Run All。\""
+  },
+  {
+   "en": "\"r1_models.json is missing: R1 is not registered yet.\"",
+   "zh": "\"缺少 r1_models.json：R1 還沒登錄。\""
+  },
+  {
+   "en": "f\"r1_models.json SHA-256: {R1_SHA}; registration {R1.get('r1_tag')}, commit {R1.get('r1_commit')}\"",
+   "zh": "f\"r1_models.json 的 SHA-256：{R1_SHA}；登錄 {R1.get('r1_tag')}，commit {R1.get('r1_commit')}\""
+  },
+  {
+   "en": "\"stage2_go.json exists: stage 1 is registered (R2) and is skipped.\"",
+   "zh": "\"stage2_go.json 已存在：第一階段已登錄（R2），略過。\""
+  },
+  {
+   "en": "\"run_config.json differs from this run's settings\"",
+   "zh": "\"run_config.json 和這次的設定不同\""
+  },
+  {
+   "en": "f\"Some models did not finish; Run All again to retry them: {retry}\"",
+   "zh": "f\"有模型沒有完成，請再按 Run All 重跑：{retry}\""
+  },
+  {
+   "en": "\"predictions.json differs from the recomputed predictions\"",
+   "zh": "\"predictions.json 和重算的預測不同\""
+  },
+  {
+   "en": "f\"predictions.json SHA-256: {PRED_SHA}\"",
+   "zh": "f\"predictions.json 的 SHA-256：{PRED_SHA}\""
+  },
+  {
+   "en": "\"Stage 1 is done. Next: check the synced hash and register R2; stage 2 waits for stage2_go.json.\"",
+   "zh": "\"第一階段完成。下一步：核對同步後的雜湊並完成 R2；第二階段要等 stage2_go.json。\""
+  },
+  {
+   "en": "\"stage2_go.json is missing: stage 2 cannot start yet.\"",
+   "zh": "\"缺少 stage2_go.json：第二階段還不能開始。\""
+  },
+  {
+   "en": "f\"stage2_go.json lacks {missing}\"",
+   "zh": "f\"stage2_go.json 缺少 {missing}\""
+  },
+  {
+   "en": "f\"predictions.json SHA-256 {PRED_SHA} differs from stage2_go.json: stopping.\"",
+   "zh": "f\"predictions.json 的 SHA-256 {PRED_SHA} 和 stage2_go.json 不同：停止。\""
+  },
+  {
+   "en": "f\"Gate open: {GO['r2_tag']} {GO['r2_commit'][:12]}, Bitcoin block {GO['ots_block_height']} ({GO['ots_block_time']})\"",
+   "zh": "f\"閘門通過：{GO['r2_tag']} {GO['r2_commit'][:12]}，比特幣區塊 {GO['ots_block_height']}（{GO['ots_block_time']}）\""
+  },
+  {
+   "en": "f\"Some models did not finish; Run All again to resume them: {retry}\"",
+   "zh": "f\"有模型沒有完成，請再按 Run All 從存檔接著跑：{retry}\""
+  },
+  {
+   "en": "f\"Done: {len(files)} files; results are in {OUT}/\"",
+   "zh": "f\"完成：{len(files)} 個檔案；結果在 {OUT}/\""
+  }
+ ],
+ "cell2_paths": [
+  {
+   "cell": 2,
+   "en": "\"/content/drive/MyDrive/curvature-margin/data\"",
+   "zh": "\"/content/drive/MyDrive/AI-Text/03_實驗/data\""
+  }
+ ]
+}

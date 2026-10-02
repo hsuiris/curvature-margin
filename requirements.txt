@@ -1,0 +1,14 @@
+# Exact versions used to produce every number in results/ (Python 3.13.12).
+# Fold assignment in scikit-learn's GroupKFold depends on numpy's sort; other versions give slightly different
+# cross-validated numbers in a05/a06/a09/a11/a12. Keep these pins to reproduce the paper exactly.
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+xgboost==3.4.1
+matplotlib==3.11.2
+huggingface_hub==1.32.0
+# GPU notebooks and re-scoring only (Colab ran torch 2.11 with transformers 5.17.0 for the main experiments)
+torch>=2.11
+transformers==5.17.0
+accelerate>=1.0

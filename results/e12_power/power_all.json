@@ -1,0 +1,364 @@
+{
+ "seed": 20260930,
+ "noise_sd": {
+  "common": {
+   "T_hat": 0.000854,
+   "b": 0.000618,
+   "T*": 0.000746,
+   "T_direct": 0.000626,
+   "T*_B": 0.000764
+  },
+  "specific": {
+   "T_hat": 0.000464,
+   "b": 0.000337,
+   "T*": 0.001493,
+   "T_direct": 0.002116,
+   "T*_B": 0.001961
+  }
+ },
+ "tables_1_2": {
+  "known7": {
+   "c1": 0.6821,
+   "R": 0.9682,
+   "c1_and_R": 0.6539,
+   "A_slope": 0.0,
+   "A_direct": 0.0,
+   "A_line": 0.0,
+   "B_slope": 0.0035,
+   "B_direct": 0.0,
+   "ref_K10_known_mean": 0.1595,
+   "ref_K10_guess1": 0.2688,
+   "ref_better_known_mean_first": 0.0723,
+   "ref_better_guess1": 0.288,
+   "alone_A_slope": 0.0,
+   "alone_A_direct": 0.0
+  },
+  "test4": {
+   "c1": 0.9909,
+   "R": 0.9449,
+   "c1_and_R": 0.9369,
+   "A_slope": 0.0009,
+   "A_direct": 0.0,
+   "A_line": 0.0,
+   "B_slope": 0.0691,
+   "B_direct": 0.0,
+   "ref_K10_known_mean": 0.9655,
+   "ref_K10_guess1": 0.2286,
+   "ref_better_known_mean_first": 0.8908,
+   "ref_better_guess1": 0.3108,
+   "alone_A_slope": 0.0009,
+   "alone_A_direct": 0.0003
+  },
+  "test3_noBLOOM": {
+   "c1": 0.9829,
+   "R": 0.4156,
+   "c1_and_R": 0.4075,
+   "A_slope": 0.0,
+   "A_direct": 0.0,
+   "A_line": 0.0,
+   "B_slope": 0.0932,
+   "B_direct": 0.0,
+   "ref_K10_known_mean": 0.9487,
+   "ref_K10_guess1": 0.143,
+   "ref_better_known_mean_first": 0.3364,
+   "ref_better_guess1": 0.0065,
+   "alone_A_slope": 0.0,
+   "alone_A_direct": 0.0002
+  }
+ },
+ "table3": {
+  "B 的情境：T̂、T* 各自從已知 7 個模型獨立抽": 0.02529,
+  "獨立的常態邊際分布": 0.02494,
+  "A 的反例（T̂ 全部 1.0045；T* 90% 1.0025、10% 1.0）": 0.02558,
+  "獨立的偏斜（對數常態）邊際分布": 0.02492,
+  "家族之間沒有差異，只有文件雜訊": 0.02491
+ },
+ "validity_19": [
+  {
+   "config": "homogeneous Qwen2.5-3B",
+   "Delta_slope": -0.007798422186772526,
+   "Delta_direct": -0.00863575597564373,
+   "Delta_line": -0.007785100927012812,
+   "slope_above": 0.011,
+   "slope_below": 0.009,
+   "direct_above": 0.0045,
+   "direct_below": 0.0,
+   "line_above": 0.0115,
+   "line_below": 0.009
+  },
+  {
+   "config": "homogeneous SmolLM2-1.7B",
+   "Delta_slope": 0.0008637539481668858,
+   "Delta_direct": -0.00021983426806660694,
+   "Delta_line": 0.0005491109922782831,
+   "slope_above": 0.0,
+   "slope_below": 0.0055,
+   "direct_above": 0.001,
+   "direct_below": 0.0,
+   "line_above": 0.0,
+   "line_below": 0.0075
+  },
+  {
+   "config": "homogeneous phi-2",
+   "Delta_slope": -0.006443445710404427,
+   "Delta_direct": -0.005473844169648974,
+   "Delta_line": -0.006460793112136426,
+   "slope_above": 0.0065,
+   "slope_below": 0.0025,
+   "direct_above": 0.0095,
+   "direct_below": 0.0005,
+   "line_above": 0.007,
+   "line_below": 0.0025
+  },
+  {
+   "config": "homogeneous OLMo-2-0425-1B",
+   "Delta_slope": -0.0008752810571634655,
+   "Delta_direct": -0.0003931605429304237,
+   "Delta_line": -0.0006996843523299759,
+   "slope_above": 0.009,
+   "slope_below": 0.0015,
+   "direct_above": 0.003,
+   "direct_below": 0.0,
+   "line_above": 0.011,
+   "line_below": 0.0015
+  },
+  {
+   "config": "homogeneous granite-3.3-2b-base",
+   "Delta_slope": -0.001264878651381073,
+   "Delta_direct": -0.0004892798317576147,
+   "Delta_line": -0.0013200040981647407,
+   "slope_above": 0.0055,
+   "slope_below": 0.0045,
+   "direct_above": 0.0025,
+   "direct_below": 0.0,
+   "line_above": 0.0055,
+   "line_below": 0.0045
+  },
+  {
+   "config": "homogeneous gpt-neo-1.3B",
+   "Delta_slope": -0.0006954742432350314,
+   "Delta_direct": -4.9761661308098594e-05,
+   "Delta_line": -0.0005890379000624179,
+   "slope_above": 0.007,
+   "slope_below": 0.001,
+   "direct_above": 0.001,
+   "direct_below": 0.0,
+   "line_above": 0.0085,
+   "line_below": 0.001
+  },
+  {
+   "config": "homogeneous bloom-1b7",
+   "Delta_slope": 0.0010239050715047495,
+   "Delta_direct": 0.00035114897616991874,
+   "Delta_line": 0.0011009218212606055,
+   "slope_above": 0.006,
+   "slope_below": 0.005,
+   "direct_above": 0.0,
+   "direct_below": 0.0,
+   "line_above": 0.006,
+   "line_below": 0.005
+  },
+  {
+   "config": "known7 draw 0",
+   "Delta_slope": -0.0023667039274726403,
+   "Delta_direct": -0.0028871495883176475,
+   "Delta_line": -0.002443661615664125,
+   "slope_above": 0.0,
+   "slope_below": 0.0,
+   "direct_above": 0.0,
+   "direct_below": 0.0,
+   "line_above": 0.0,
+   "line_below": 0.0
+  },
+  {
+   "config": "known7 draw 1",
+   "Delta_slope": -0.0034507615232763746,
+   "Delta_direct": -0.003444044938505059,
+   "Delta_line": -0.00345080116639119,
+   "slope_above": 0.0005,
+   "slope_below": 0.0,
+   "direct_above": 0.0005,
+   "direct_below": 0.0,
+   "line_above": 0.0,
+   "line_below": 0.0
+  },
+  {
+   "config": "known7 draw 2",
+   "Delta_slope": -0.003837863529375499,
+   "Delta_direct": -0.004229098885202265,
+   "Delta_line": -0.00389780647850102,
+   "slope_above": 0.0,
+   "slope_below": 0.0,
+   "direct_above": 0.0005,
+   "direct_below": 0.0,
+   "line_above": 0.0,
+   "line_below": 0.0
+  },
+  {
+   "config": "known7 draw 3",
+   "Delta_slope": -0.0030950451743880633,
+   "Delta_direct": -0.0030716792199456783,
+   "Delta_line": -0.0030996087251184243,
+   "slope_above": 0.0,
+   "slope_below": 0.0,
+   "direct_above": 0.0,
+   "direct_below": 0.0,
+   "line_above": 0.0,
+   "line_below": 0.0
+  },
+  {
+   "config": "known7 draw 4",
+   "Delta_slope": -0.0018392526937336363,
+   "Delta_direct": -0.0013796532303579291,
+   "Delta_line": -0.0017772717413709139,
+   "slope_above": 0.003,
+   "slope_below": 0.0,
+   "direct_above": 0.0025,
+   "direct_below": 0.0,
+   "line_above": 0.0025,
+   "line_below": 0.0
+  },
+  {
+   "config": "known7 draw 5",
+   "Delta_slope": -0.003627801047578008,
+   "Delta_direct": -0.003583491056986891,
+   "Delta_line": -0.0036401451785244105,
+   "slope_above": 0.0,
+   "slope_below": 0.0,
+   "direct_above": 0.0005,
+   "direct_below": 0.0,
+   "line_above": 0.0,
+   "line_below": 0.0
+  },
+  {
+   "config": "test4 draw 0",
+   "Delta_slope": -0.0007596356065897974,
+   "Delta_direct": -0.00029874480805958364,
+   "Delta_line": -0.0006576705369846657,
+   "slope_above": 0.004,
+   "slope_below": 0.0025,
+   "direct_above": 0.0015,
+   "direct_below": 0.0,
+   "line_above": 0.0035,
+   "line_below": 0.002
+  },
+  {
+   "config": "test4 draw 1",
+   "Delta_slope": -0.00012620422063421103,
+   "Delta_direct": -4.2089569679663905e-05,
+   "Delta_line": -4.568912003747353e-05,
+   "slope_above": 0.0015,
+   "slope_below": 0.0025,
+   "direct_above": 0.0,
+   "direct_below": 0.0,
+   "line_above": 0.0015,
+   "line_below": 0.002
+  },
+  {
+   "config": "test4 draw 2",
+   "Delta_slope": -0.000706849604881895,
+   "Delta_direct": -0.0002677726053304218,
+   "Delta_line": -0.0006707318328881265,
+   "slope_above": 0.006,
+   "slope_below": 0.003,
+   "direct_above": 0.0005,
+   "direct_below": 0.0,
+   "line_above": 0.006,
+   "line_below": 0.0035
+  },
+  {
+   "config": "test4 draw 3",
+   "Delta_slope": -0.000692481526509034,
+   "Delta_direct": -0.00019921062855017782,
+   "Delta_line": -0.0005971654110598154,
+   "slope_above": 0.0035,
+   "slope_below": 0.0035,
+   "direct_above": 0.0005,
+   "direct_below": 0.0005,
+   "line_above": 0.003,
+   "line_below": 0.003
+  },
+  {
+   "config": "test4 draw 4",
+   "Delta_slope": -0.0005416403197210556,
+   "Delta_direct": -0.00020322103008110228,
+   "Delta_line": -0.0005255608967561837,
+   "slope_above": 0.0045,
+   "slope_below": 0.0035,
+   "direct_above": 0.0,
+   "direct_below": 0.0,
+   "line_above": 0.0045,
+   "line_below": 0.0035
+  },
+  {
+   "config": "test4 draw 5",
+   "Delta_slope": -0.0005758635798652155,
+   "Delta_direct": -0.00018518885042825847,
+   "Delta_line": -0.0004883243587939704,
+   "slope_above": 0.005,
+   "slope_below": 0.003,
+   "direct_above": 0.0005,
+   "direct_below": 0.0,
+   "line_above": 0.004,
+   "line_below": 0.0025
+  }
+ ],
+ "exact_nulls": {
+  "slope：T* 像已知 7 個那樣分散": {
+   "Delta": -7.295017841226205e-05,
+   "false_pass": 0.0
+  },
+  "slope：所有 T* 都高於兩個預測 0.005": {
+   "Delta": -2.0423337818058053e-06,
+   "false_pass": 0.0009
+  },
+  "slope：所有 T* 都高於兩個預測 0.02": {
+   "Delta": 9.767032300180625e-08,
+   "false_pass": 0.0096
+  },
+  "line：T* 像已知 7 個那樣分散": {
+   "Delta": -7.208861550732351e-05,
+   "false_pass": 0.0
+  },
+  "line：所有 T* 都高於兩個預測 0.005": {
+   "Delta": 1.2984708622547243e-06,
+   "false_pass": 0.0016
+  },
+  "line：所有 T* 都高於兩個預測 0.02": {
+   "Delta": 1.5037228601281555e-06,
+   "false_pass": 0.0113
+  },
+  "direct：T* 像已知 7 個，T̂ 平移 0.00189 使 Δ = 0": {
+   "Delta": -1.9433187697925903e-15,
+   "false_pass": 0.0001
+  },
+  "direct：T* 像第一次檢驗 4 個，T̂ 平移 0.00189 使 Δ = 0": {
+   "Delta": -1.943325708686494e-15,
+   "false_pass": 0.0002
+  }
+ },
+ "examples": {
+  "A3_negative_r": {
+   "r": -0.9288746304045926,
+   "p": 9.99990000099999e-06,
+   "criterion2": false
+  },
+  "A7_danube": {
+   "model1": [
+    1,
+    0.0020000000000000018
+   ],
+   "model2_with_endpoint": [
+    3,
+    -0.0040000000000000036
+   ],
+   "model2_without_endpoint": [
+    4,
+    0.0
+   ],
+   "K_case4": 9,
+   "K_with_endpoint": 9
+  }
+ },
+ "seconds": 927
+}

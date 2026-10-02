@@ -1,0 +1,7 @@
+generator,decoding,AUROC_two_sided,CI
+Qwen/Qwen2.5-3B,pure,0.6275000000000001,"[0.547, 0.705]"
+Qwen/Qwen2.5-3B,topp,0.9457,"[0.914, 0.973]"
+Qwen/Qwen2.5-3B-Instruct,pure,0.5247,"[0.452, 0.598]"
+Qwen/Qwen2.5-3B-Instruct,topp,0.9739,"[0.950, 0.993]"
+facebook/opt-2.7b,pure,0.5944,"[0.516, 0.676]"
+facebook/opt-2.7b,topp,0.9954000000000001,"[0.989, 1.000]"

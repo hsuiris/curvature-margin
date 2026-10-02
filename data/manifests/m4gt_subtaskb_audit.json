@@ -1,0 +1,273 @@
+{
+  "raw_file": "SubtaskB.jsonl",
+  "raw_sha256": "4d65fc1fb93b5c9d21b226aca06b610ee031fa9ccbc18fa6f39d16273dd281c7",
+  "selection_rule": {
+    "split_field": "{source}_0 == test",
+    "sources": [
+      "arxiv",
+      "outfox",
+      "peerread",
+      "reddit",
+      "wikihow",
+      "wikipedia"
+    ],
+    "per_label_source_model": 200,
+    "selection": "lowest SHA-256(text) within each label/source/model group",
+    "label_interpretation": "1 = human; 0, 2-6 = generator classes"
+  },
+  "eligible_counts": [
+    {
+      "label": 0,
+      "source": "arxiv",
+      "model": "chatGPT",
+      "n": 3000
+    },
+    {
+      "label": 0,
+      "source": "outfox",
+      "model": "gpt-3.5-turbo",
+      "n": 3000
+    },
+    {
+      "label": 0,
+      "source": "peerread",
+      "model": "chatGPT",
+      "n": 2340
+    },
+    {
+      "label": 0,
+      "source": "reddit",
+      "model": "chatGPT",
+      "n": 3000
+    },
+    {
+      "label": 0,
+      "source": "wikihow",
+      "model": "chatGPT",
+      "n": 5557
+    },
+    {
+      "label": 0,
+      "source": "wikipedia",
+      "model": "chatGPT",
+      "n": 2995
+    },
+    {
+      "label": 1,
+      "source": "arxiv",
+      "model": "human",
+      "n": 2998
+    },
+    {
+      "label": 1,
+      "source": "outfox",
+      "model": "human",
+      "n": 2999
+    },
+    {
+      "label": 1,
+      "source": "peerread",
+      "model": "human",
+      "n": 2847
+    },
+    {
+      "label": 1,
+      "source": "reddit",
+      "model": "human",
+      "n": 3000
+    },
+    {
+      "label": 1,
+      "source": "wikihow",
+      "model": "human",
+      "n": 2999
+    },
+    {
+      "label": 1,
+      "source": "wikipedia",
+      "model": "human",
+      "n": 2336
+    },
+    {
+      "label": 2,
+      "source": "arxiv",
+      "model": "cohere",
+      "n": 3000
+    },
+    {
+      "label": 2,
+      "source": "outfox",
+      "model": "cohere",
+      "n": 3000
+    },
+    {
+      "label": 2,
+      "source": "peerread",
+      "model": "cohere",
+      "n": 2342
+    },
+    {
+      "label": 2,
+      "source": "reddit",
+      "model": "cohere",
+      "n": 3000
+    },
+    {
+      "label": 2,
+      "source": "wikihow",
+      "model": "cohere",
+      "n": 3000
+    },
+    {
+      "label": 2,
+      "source": "wikipedia",
+      "model": "cohere",
+      "n": 2336
+    },
+    {
+      "label": 3,
+      "source": "arxiv",
+      "model": "davinci",
+      "n": 3000
+    },
+    {
+      "label": 3,
+      "source": "outfox",
+      "model": "davinci-003",
+      "n": 3000
+    },
+    {
+      "label": 3,
+      "source": "peerread",
+      "model": "davinci",
+      "n": 2340
+    },
+    {
+      "label": 3,
+      "source": "reddit",
+      "model": "davinci",
+      "n": 3000
+    },
+    {
+      "label": 3,
+      "source": "wikihow",
+      "model": "davinci",
+      "n": 3000
+    },
+    {
+      "label": 3,
+      "source": "wikipedia",
+      "model": "davinci",
+      "n": 3000
+    },
+    {
+      "label": 4,
+      "source": "arxiv",
+      "model": "bloomz",
+      "n": 3000
+    },
+    {
+      "label": 4,
+      "source": "outfox",
+      "model": "bloomz",
+      "n": 3000
+    },
+    {
+      "label": 4,
+      "source": "peerread",
+      "model": "bloomz",
+      "n": 2334
+    },
+    {
+      "label": 4,
+      "source": "reddit",
+      "model": "bloomz",
+      "n": 2999
+    },
+    {
+      "label": 4,
+      "source": "wikihow",
+      "model": "bloomz",
+      "n": 3000
+    },
+    {
+      "label": 4,
+      "source": "wikipedia",
+      "model": "bloomz",
+      "n": 2999
+    },
+    {
+      "label": 5,
+      "source": "arxiv",
+      "model": "dolly",
+      "n": 3000
+    },
+    {
+      "label": 5,
+      "source": "outfox",
+      "model": "dolly-v2-12b",
+      "n": 3000
+    },
+    {
+      "label": 5,
+      "source": "peerread",
+      "model": "dolly",
+      "n": 2344
+    },
+    {
+      "label": 5,
+      "source": "reddit",
+      "model": "dolly",
+      "n": 3000
+    },
+    {
+      "label": 5,
+      "source": "wikihow",
+      "model": "dolly",
+      "n": 3000
+    },
+    {
+      "label": 5,
+      "source": "wikipedia",
+      "model": "dolly",
+      "n": 2702
+    },
+    {
+      "label": 6,
+      "source": "arxiv",
+      "model": "gpt4",
+      "n": 3000
+    },
+    {
+      "label": 6,
+      "source": "outfox",
+      "model": "gpt-3.5-turbo",
+      "n": 3000
+    },
+    {
+      "label": 6,
+      "source": "peerread",
+      "model": "gpt4",
+      "n": 2344
+    },
+    {
+      "label": 6,
+      "source": "reddit",
+      "model": "gpt4",
+      "n": 3000
+    },
+    {
+      "label": 6,
+      "source": "wikihow",
+      "model": "gpt4",
+      "n": 3000
+    },
+    {
+      "label": 6,
+      "source": "wikipedia",
+      "model": "gpt4",
+      "n": 3000
+    }
+  ],
+  "manifest_rows": 8400
+}
